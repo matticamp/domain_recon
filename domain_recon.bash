@@ -43,7 +43,7 @@ cd Contents/MacOS/
 
 ./Google\ Chrome -new-tab https://otx.alienvault.com/browse/pulses?q=$domain &
 
-./Google\ Chrome -new-tab https://sitecheck.sucuri.net/results/www.reputationauthority.org &
+./Google\ Chrome -new-tab https://sitecheck.sucuri.net/results/$domain &
 ./Google\ Chrome -new-tab https://www.threatminer.org/domain.php?q=$domain &
 
 ./Google\ Chrome -new-tab https://hashdd.com/i/$domain &
