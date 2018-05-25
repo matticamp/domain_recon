@@ -13,7 +13,7 @@ if [ -z $domain ]; then
   echo -n "Please enter a domain "
   exit 1
 
-#Otherwise executes the recon scripts and opens the website list below
+#Otherwise executes the recon scripts and opens the website list found below
 
 else
    echo -n "recon on $domain";
@@ -31,7 +31,7 @@ cd /Applications/Google\ Chrome.app/
 cd Contents/MacOS/
 
 #Open Google Chrome in a new tab 
-#The browser will open a series oif new tab, prepopulated with the 
+#The browser will open a series of new tabs, prepopulated with the 
 #domain entered by the user.
 
 ./Google\ Chrome -new-tab  http://intodns.com/$domain &
