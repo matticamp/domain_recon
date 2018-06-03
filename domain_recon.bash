@@ -5,7 +5,7 @@
 echo "DOMAIN RECON"
 echo "By Mattia Campagnano"
 echo "-------------------"
-echo -n "Please enter a domain: "
+echo "Please enter a domain: "
 read domain
 
 #Checks user input and throws an error if no domain was entered.
@@ -22,6 +22,20 @@ fi
 
 read -p "Press <ENTER > to continue"
 
+#Retrieves all IP addresses associated to the given domain
+
+IPs=$(dig $domain | grep "$domain\." | awk '{print $5}')
+echo "We found the following IP addresses $IPs associated to the $domain domain"
+echo
+echo
+echo
+
+#Optional: save associated IP addresses to an output file 
+#echo "Please enter a filepath for the output file: "
+#read output
+#echo $IPs > $output
+
+
 #Steps needed to open Chrome in a new tab from Terminal in OS X /macOS
 #cd into the Google Chrome folder
 
@@ -35,7 +49,7 @@ cd Contents/MacOS/
 #The browser will open a series of new tabs, prepopulated with the 
 #domain entered by the user.
 
-./Google\ Chrome -new-tab  http://intodns.com/$domain &
+./Google\ Chrome -new-tab http://intodns.com/$domain &
 ./Google\ Chrome -new-tab https://www.virustotal.com/#/domain/$domain &
 ./Google\ Chrome -new-tab http://viewdns.info/dnsreport/?domain=$domain &
 ./Google\ Chrome -new-tab https://www.whatsmydns.net/#A/$domain
