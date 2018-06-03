@@ -4,7 +4,7 @@
 
 echo "DOMAIN RECON"
 echo "By Mattia Campagnano"
-ECHO "-------------------"
+echo "-------------------"
 echo -n "Please enter a domain: "
 read domain
 
