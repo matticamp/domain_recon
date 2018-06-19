@@ -1,6 +1,6 @@
 #!/bin/bash
 # Bash script for reconnaissance on domains
-# Created by Mattia Campagnano on Sat Feb 6 00:27:30 EST 2016
+# Created by Mattia Campagnano on Tue Jun 19 14:44:07 EDT 2018
 # This is a modified version of the original script, intended for use with the Windows Subsystem for Linux under Windows 10
 
 echo "DOMAIN RECON"
