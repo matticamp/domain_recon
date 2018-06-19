@@ -51,7 +51,7 @@ cd Contents/MacOS/
 # domain entered by the user.
 
 # Start Chrome in background (speeds up tab loading)
-./Google\ Chrome & 
+#./Google\ Chrome & 
 
 # Open websites list used to check on the domain
 
