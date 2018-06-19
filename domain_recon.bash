@@ -51,6 +51,11 @@ cd Contents/MacOS/
 #The browser will open a series of new tabs, prepopulated with the 
 #domain entered by the user.
 
+# Start Chrome in background (it speeds up tab loading)
+./Google\ Chrome & 
+
+# Open websites list used to check on the domain
+
 ./Google\ Chrome -new-tab http://intodns.com/$domain &
 ./Google\ Chrome -new-tab https://www.virustotal.com/#/domain/$domain &
 ./Google\ Chrome -new-tab http://viewdns.info/dnsreport/?domain=$domain &
