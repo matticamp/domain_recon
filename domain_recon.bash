@@ -21,7 +21,8 @@ else
    echo -n "recon on $domain";
 fi
 
-read -p "Press <ENTER > to continue"
+read -p 
+echo "Press <ENTER > to continue"
 
 #Retrieves all IP addresses associated to the given domain
 
