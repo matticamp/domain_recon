@@ -1,6 +1,6 @@
 #!/bin/bash
 #Bash script for reconnaissance on domains
-#Created by Mattia Campagnano on Tue Jun 19 14:44:07 EDT 2018
+#Created by Mattia Campagnano on Tue May 24 14:44:07 EDT 2018
 
 
 echo "DOMAIN RECON"
