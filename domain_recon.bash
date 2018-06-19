@@ -6,7 +6,7 @@
 echo "DOMAIN RECON"
 echo "By Mattia Campagnano"
 echo "-------------------"
-echo "Please enter a domain: "
+echo -n "Please enter a domain: "
 read domain
 
 #Checks user input and throws an error if no domain was entered.
@@ -18,13 +18,12 @@ if [ -z $domain ]; then
 #Otherwise executes the recon scripts and opens the website list found below
 
 else
-   echo -n "recon on $domain";
+   echo "recon on $domain";
 fi
 
-read -p 
-echo "Press <ENTER > to continue"
+read -p "Press <ENTER > to continue
 
-#Retrieves all IP addresses associated to the given domain
+# Retrieves all IP addresses associated to the given domain
 
 IPs=$(dig $domain | grep "$domain\." | awk '{print $5}')
 echo "We found the following IP addresses $IPs associated to the $domain domain"
@@ -32,26 +31,26 @@ echo
 echo
 echo
 
-#Optional: save associated IP addresses to an output file 
+# Optional: save associated IP addresses to an output file 
 #echo "Please enter a filepath for the output file: "
 #read output
 #echo $IPs > $output
 
 
-#Steps needed to open Chrome in a new tab from Terminal in OS X /macOS
-#cd into the Google Chrome folder
+# Steps needed to open Chrome in a new tab from Terminal in OS X /macOS
+# cd into the Google Chrome folder
 
 cd /Applications/Google\ Chrome.app/
 
-#cd into the hidden folder containing the actual executable for Mac
+# cd into the hidden folder containing the actual executable for Mac
 
 cd Contents/MacOS/
 
-#Open Google Chrome in a new tab 
-#The browser will open a series of new tabs, prepopulated with the 
-#domain entered by the user.
+# Open Google Chrome in a new tab 
+# The browser will open a series of new tabs, prepopulated with the 
+# domain entered by the user.
 
-# Start Chrome in background (it speeds up tab loading)
+# Start Chrome in background (speeds up tab loading)
 ./Google\ Chrome & 
 
 # Open websites list used to check on the domain
