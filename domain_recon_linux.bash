@@ -38,17 +38,17 @@ echo $IPs > $output
 
 # Open websites list used to check on the domain
 
-firefox -new-tab http://intodns.com/$domain &
-firefox -new-tab https://www.virustotal.com/#/domain/$domain &
-firefox -new-tab http://viewdns.info/dnsreport/?domain=$domain &
-firefox -new-tab https://www.whatsmydns.net/#A/$domain
-firefox -new-tab https://safeweb.norton.com/report/show?url=$domain
-firefox -new-tab http://www.reputationauthority.org/domain_lookup.php?ip=$domain&ipvalid=&Submit.x=20&Submit.y=16&Submit=Search &
+google-chrome -new-tab http://intodns.com/$domain &
+google-chrome -new-tab https://www.virustotal.com/#/domain/$domain &
+google-chrome -new-tab http://viewdns.info/dnsreport/?domain=$domain &
+google-chrome -new-tab https://www.whatsmydns.net/#A/$domain
+google-chrome-new-tab https://safeweb.norton.com/report/show?url=$domain
+google-chrome -new-tab http://www.reputationauthority.org/domain_lookup.php?ip=$domain&ipvalid=&Submit.x=20&Submit.y=16&Submit=Search &
 
-firefox -new-tab https://otx.alienvault.com/browse/pulses?q=$domain &
+google-chrome -new-tab https://otx.alienvault.com/browse/pulses?q=$domain &
 
-firefox -new-tab https://sitecheck.sucuri.net/results/$domain &
-firefox -new-tab https://www.threatminer.org/domain.php?q=$domain &
+google-chrome -new-tab https://sitecheck.sucuri.net/results/$domain &
+google-chrome -new-tab https://www.threatminer.org/domain.php?q=$domain &
 
-firefox -new-tab https://hashdd.com/i/$domain &
+google-chrome -new-tab https://hashdd.com/i/$domain &
 
